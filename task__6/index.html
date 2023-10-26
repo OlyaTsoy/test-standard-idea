@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task 6</title>
+  </head>
+  <body>
+    <div class="section">
+      <button class="button">
+        <img class="icon" src="./img/like.svg" alt="like">
+        <span class="text" id="like">Нравится</span>
+      </button>
+      <button class="button">
+        <img class="icon" src="./img/comment.svg" alt="comment">
+        <span class="text" id="comment">Комментировать</span>
+      </button>
+      <button class="button">
+        <img class="icon" src="./img/delete.svg" alt="delete">
+        <span class="text" id="delete">Удалить</span>
+      </button>
+    </div>
+    <div class="section">
+      <input id="inputLike" type="text" placeholder="Введите текст для кнопки" />
+      <input id="inputComment" type="text" placeholder="Введите текст для кнопки" />
+      <input id="inputDelete" type="text" placeholder="Введите текст для кнопки" />
+    </div>
+    <!-- Реализовать изменение теста кнопок через инпут можно только через js, т.к. html - статичный -->
+    <!-- Но изменеие текста можно сделать без инпутов, сразу в кнопке, добавив атрибут contentEditable -->
+    <button id="updateTextBtn">Обновить текст</button>
+    <script src="script.js"></script>
+  </body>
+</html>

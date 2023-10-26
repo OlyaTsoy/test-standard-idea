@@ -1,0 +1,88 @@
+/* Внешний блок */
+.mainBlock {
+  width: 600px;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid #34a68a;
+  margin-top: 10px;
+}
+
+/* Внутренний блок */
+.subBlock {
+  width: 150px;
+  height: 33px;
+  border-radius: 5px;
+  border: 1px solid #ff0000;
+}
+
+/* Grid */
+/* Place-content */
+.mainBlock--gridPlace {
+  display: grid;
+  place-content: center;
+}
+
+/* Grid + margin */
+.mainBlock--grid {
+  display: grid;
+}
+
+#grid-margin {
+  margin: auto;
+}
+
+/* Justify/align-items */
+.mainBlock--gridItems {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/*  Justify/align-self */
+.mainBlock--grid {
+  display: grid;
+}
+
+#grid-self {
+  justify-self: center;
+  align-self: center;
+}
+
+/* Flex */
+.mainBlock--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Position */
+.mainBlock--position {
+  position: relative;
+}
+
+#position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Table-cell */
+.mainBlock--table {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#table {
+  margin: 0 auto;
+}
+
+/* Line-height + text-align */
+.mainBlock--line {
+  text-align: center;
+  line-height: 226px;
+}
+
+#line {
+  display: inline-block;
+}

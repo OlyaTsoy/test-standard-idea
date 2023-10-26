@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Task 1</title>
+</head>
+<body>
+  <!-- Примеры выравнивания с display: grid -->
+  <h4>Display: grid; Place-content;</h4>
+  <div class="mainBlock mainBlock--gridPlace">
+    <div class="subBlock"></div>
+  </div>
+  <!-- Метод place-content работает в современных браузерах и может не поддерживаться в старых версиях -->
+  <h4>Display: grid; Margin;</h4>
+  <div class="mainBlock mainBlock--grid">
+    <div class="subBlock" id="grid-margin"></div>
+  </div>
+  <h4>Display: grid; Justify-items; Align-items;</h4>
+  <div class="mainBlock mainBlock--gridItems">
+    <div class="subBlock"></div>
+  </div>
+  <h4>Display: grid; Justify-self; Align-self;</h4>
+  <div class="mainBlock mainBlock--grid">
+    <div class="subBlock" id="grid-self"></div>
+  </div>
+
+  <!-- Примеры выравнивания с display: flex -->
+  <h4>Display: flex;</h4>
+  <div class="mainBlock mainBlock--flex">
+    <div class="subBlock"></div>
+  </div>
+
+  <!-- Пример выравнивания с position -->
+  <h4>Position; Transform;</h4>
+  <div class="mainBlock mainBlock--position">
+    <div class="subBlock" id="position"></div>
+  </div>
+
+  <!-- Пример выравнивания с display: table-cell -->
+  <h4>Display: table-cell;</h4>
+  <div class="mainBlock mainBlock--table">
+    <div class="subBlock" id="table"></div>
+  </div>
+
+  <!-- Пример выравнивания с line-height -->
+  <h4>Line-height, Text-align; display: inline-block;</h4>
+  <div class="mainBlock mainBlock--line">
+    <div class="subBlock" id="line"></div>
+  </div>
+  <!-- Этот метод требует жесткой установки line-height для контейнера -->
+</body>
+</html>
