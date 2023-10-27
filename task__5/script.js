@@ -1,4 +1,5 @@
 const icon = document.querySelector('.icon');
+const iconPath = document.querySelector('.icon path');
 const startAnimationBtn = document.querySelector('#startAnimation');
 const changeColorBtn = document.querySelector('#changeColor');
 
@@ -10,5 +11,5 @@ startAnimationBtn.addEventListener('click', () => {
 
 changeColorBtn.addEventListener('click', () => {
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
-  icon.style.backgroundColor = randomColor;
+  iconPath.style.fill = randomColor;
 });

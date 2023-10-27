@@ -8,8 +8,13 @@ updateTextBtn.addEventListener('click', () => {
   const inputLike = document.querySelector('#inputLike').value;
   const inputComment = document.querySelector('#inputComment').value;
   const inputDelete = document.querySelector('#inputDelete').value;
-
-  likeIcon.textContent = inputLike;
-  commentIcon.textContent = inputComment;
-  deleteIcon.textContent = inputDelete;
+  if (inputLike) {
+    likeIcon.textContent = inputLike;
+  }
+  if (inputComment) {
+    commentIcon.textContent = inputComment;
+  }
+  if (inputDelete) {
+    deleteIcon.textContent = inputDelete;
+  }
 });
